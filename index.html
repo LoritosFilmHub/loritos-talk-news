@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LoritoApp</title>
+</head>
+<body>
+  <h1>Bem-vindo ao LoritoApp</h1>
+  <p>Cadastrar e fazer login com Firebase.</p>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyD08kPmpRbaFu1ZentTw6CZY00TZ-dfq2g",
+      authDomain: "loritos-talk-news.firebaseapp.com",
+      projectId: "loritos-talk-news",
+      storageBucket: "loritos-talk-news.firebasestorage.app",
+      messagingSenderId: "477937085686",
+      appId: "1:477937085686:web:0c6987953cb4de55ab90d7",
+      measurementId: "G-L3KHP3TF1S"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+  </script>
+</body>
+</html>
